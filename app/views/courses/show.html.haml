@@ -1,4 +1,9 @@
+= link_to 'Courses', course_path(@course)
+\|
+= link_to @course.title, course_path(@course)
+= render 'courses/course', course: @course
 %p#notice= notice
+
 
 %p
   %b Title:
